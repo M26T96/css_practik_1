@@ -182,3 +182,29 @@ p {
 
     overflow: scroll;
 }
+
+.card_block {
+    list-style-type: disc;
+    list-style-position: inside;
+    padding: 0;
+}
+
+.card_description_item {
+    display: list-item;     
+}
+
+.table tr td {
+    border: 1px solid #343a40;
+    border-bottom-color: red;
+    border-right-color: blue;
+}
+
+.table {
+    table-layout: auto;
+    width: 200px;
+    border-collapse: unset;
+
+    border-spacing: 10px;
+
+    caption-side: top;
+}

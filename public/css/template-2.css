@@ -288,3 +288,11 @@
 .link_item:hover{
     text-decoration: underline;
 }
+
+.flex_conteiner {
+    display: flex;
+}
+
+.flex_item {
+
+}
