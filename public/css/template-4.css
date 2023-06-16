@@ -1,0 +1,234 @@
+:root {
+    --space-m: 12px;
+    --space-l: 24px;
+    --space-b: 36px;
+    --color-primary: rgb(46, 46, 255);
+    --color-white: #fff;
+    --color-title: #212529;
+    --color-text: #343a40;
+    --border-radius: 12px;
+
+    --size-s: 14px;
+    --size-d: 16px;
+    --size-l: 20px;
+
+    --font-weight: 400;
+}
+/* =========================== */
+
+.page {
+    background: #ffffff;
+    padding: 0 15px;
+
+    display: flex;
+    justify-content: center;
+}
+
+.page_content {
+    max-width: 960px;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 80px;
+}
+
+/* =========================== */
+
+.header {
+    padding: var(--space-l) 0;
+
+    border-bottom: 1px solid #dee2ed;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 17px;
+    background: var(--color-primary);
+    color: var(--color-white);
+
+    width: 24px;
+    height: 24px;
+    border-radius: calc(var(--border-radius)/2);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.nav {
+    display: flex;
+}
+
+.nav_inline {
+    gap: var(--space-l);
+}
+
+.nav_vertical {
+    gap: var(--space-m);
+    flex-direction: column;
+}
+
+.nav_link {
+    color: var(--color-text);
+    font-size: 16px;
+    text-decoration: none;
+
+    line-height: 100%;
+}
+
+.nav_link:hover {
+    text-decoration: underline;
+    color: blue;
+}
+
+.footer {
+    padding: var(--space-l) 0;
+    border-top: 1px solid #dee2e6;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer_copyright {
+    font-size: var(--size-s);
+    color: var(--color-text);
+
+    display:block;
+    margin-top: var(--space-l);
+}
+
+.footer_title {
+    font-size: var(--size-l);
+    color: var(--color-title);
+
+    display: block;
+    margin-bottom: var(--space-m);
+}
+
+.main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 80px;
+}
+
+.main_photo {
+    height: 500px;
+    width: 500px;
+    border-radius: var(--border-radius);
+}
+
+.main_info {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-l);
+}
+
+.main_heading {
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 120%;
+    color: var(--color-title);
+}
+
+.main_descriotion {
+    font-weight: var(--font-weight);
+    font-size: var(--size-d);
+    line-height: 170%;
+    color: var(--color-text)
+}
+
+.button {
+    display: inline-block;
+    width: 120px;
+    font-size: var(--size-d);
+    text-decoration: none;
+    padding: var(--space-m) 16px;
+    border-radius: var(--border-radius);
+    background-color: #6c757d;
+    color: var(--color-white);
+}
+
+.featured {
+    display: flex;
+    gap: var(--space-b)
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    text-align: left;
+    gap: var(--space-l);
+}
+
+.card_image {
+    height: 64px;
+    width: 64px;
+    border-radius: 12px;
+}
+
+.heading {
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 100%;
+    color: var(--color-title);
+}
+
+.info {
+    width: 100%;
+    max-width: 290px;
+    font-weight: 400;
+    font-size: var(--size-d);
+    line-height: 170%;
+    font-family: 'Roboto';
+}
+
+.actions {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--color-primary);
+    padding: var(--space-l);
+    border-radius: var(--border-radius);
+}
+
+.action_content {
+    display: flex;
+    flex-direction: column;
+    gap: var(--size-d);
+}
+
+.action_heading {
+    font-family: 'roboto';
+    font-weight: var(--font-weight);
+    font-size: var(--space-l);
+    line-height: var(--size-d);
+    color: var(--color-white);
+}
+
+.action_button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 240px;
+    height: 52px;
+    background-color: var(--color-white);
+    color: var(--color-text);
+    text-align: center;
+    border-radius: 4.8px;
+}
+
+.action_text {
+    text-decoration: none; 
+    font-family: 'roboto';
+    font-weight: var(--font-weight);
+    align-items: center;
+    font-size: 20px;
+    line-height: 100%;
+    color: var(--color-text)
+}
